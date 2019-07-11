@@ -20,6 +20,10 @@ COMMON_PATH := device/oneplus/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+ifeq ($(TARGET_DEVICE),enchilada)
+TARGET_OTA_ASSERT_DEVICE := OnePlus6
+endif
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -52,7 +56,7 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 #Clang
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.4
+TARGET_KERNEL_CLANG_VERSION := 9.0.5
 
 # Platform
 # TARGET_BOARD_PLATFORM := sdm845

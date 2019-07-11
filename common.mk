@@ -85,8 +85,8 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    ims-ext-common
+    android.hidl.base@1.0
+#    ims-ext-common
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -121,11 +121,11 @@ PRODUCT_PACKAGES += \
     power.qcom:64
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+#    telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # ThermalController App
 PRODUCT_PACKAGES += \

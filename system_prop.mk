@@ -97,3 +97,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SSR
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
+
+#Expose aux camera for below packages
+camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
+
+# HAL1 apps list
+vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
